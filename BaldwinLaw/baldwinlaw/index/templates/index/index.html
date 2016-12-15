@@ -1,6 +1,5 @@
-{% load static %}
-{% load staticfiles %}
-
+ {% load staticfiles %}
+ {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,11 +14,12 @@
     <title>Grayscale - Start Bootstrap Theme</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href = "{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel = "stylesheet">
-    <link href = "{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel = "stylesheet" type="text/css">
-    <link href = "{% static 'css/grayscale.min.css' %}" rel = "stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
 
     <!-- Custom Fonts -->
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/grayscale.min.css' %}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
@@ -63,9 +63,6 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#popup" data-toggle = "modal">POP UP TEST</a>
                     </li>
                 </ul>
             </div>
@@ -151,39 +148,20 @@
     </footer>
 
     <!-- jQuery -->
-    <script src = "{% static 'vendor/jquery/jquery.js' %}"></script>
+    <script src='{% static "/vendor/jquery/jquery.js"%}'></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src = "{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src='{% static "/vendor/bootstrap/js/bootstrap.min.js"%}'></script>
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdtja1flU4Xlc0-nRYx20IW4V_auwl7YU&sensor=false"></script>
 
     <!-- Theme JavaScript -->
-    <script src = "{% static 'js/grayscale.min.js' %}"></script>
+    <script src='{% static "/js/grayscale.min.js"%}'></script>
 
-
-
-    <div id = "popup" class = "modal fade" tabindex = "-1" role = "dialog" aria_labelledby="myModalLabel">\
-        <div class = "modal-dialog">
-            <div class = "modal-content">
-
-            <div class = "modal-header">
-                <button type = "button" class = "close" data-dismiss = "modal" aria-label = "Close"><span aria-hidden = "true"> &times; </span></button>
-                <h4 class = "modal-title" id = "myModalLabel"> POP UP </h4>
-            </div>
-            <div class = "modal-body">
-
-                BLAHBLAHBLAH
-            </div>
-            <div class = "modal-footer">
-            </div>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
